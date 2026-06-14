@@ -20,16 +20,6 @@ li {
     padding: 20px;
 }
 
-.btn {
-    background-color: #6415ff;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 16px;
-    border: none;
-    padding: 12px 24px;
-}
-
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -40,13 +30,21 @@ li {
     margin: 0 auto;
 }
 
-.nav__link {
+.nav__link,
+.nav__link--primary {
     margin-left: 16px;
     text-decoration: none;
     font-size: 14px;
     color: #243E63;
     font-weight: bold;
     padding: 8px;
+}
+
+.nav__link--primary {
+    background-color: #6415ff;
+    color: white;
+    border-radius: 16px;
+    padding: 12px 24px;
 }
 
 .nav__logo {
