@@ -6,6 +6,10 @@
     font-family: "Inter", sans-serif;
  }
 
+nav {
+    padding: 32px;
+}
+
 ul {
     display: flex;
 }
@@ -14,20 +18,35 @@ li {
     font-size: 14px;
     list-style: none;
     padding: 20px;
-
 }
 
-nav {
-    padding: 32px;
+.btn {
+    background-color: #6415ff;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 16px;
+    border: none;
+    padding: 12px 24px;
 }
 
 .nav__container {
-    display: flex;
     width: 100%;
     max-width: 1200px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    justify-content: space-between;
+}
+
+.nav__link {
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #243E63;
+    font-weight: bold;
+    padding: 8px;
 }
 
 .nav__logo {
@@ -44,13 +63,4 @@ nav {
     position: absolute;
     margin-left: 40px;
     padding: 4px;
-}
-
-.nav__link {
-    color: #243E63;
-}
-
-.nav__links {
-    display: flex;
-    justify-content: flex-end;
 }
