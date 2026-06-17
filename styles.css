@@ -7,20 +7,26 @@
  }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 1.25;
     margin-bottom: 32px;
 }
 
-p {
-    font-size: 16px;
-    font-weight: 350;
-    margin-bottom: 32px;
+h2 {
+    font-size: 36px;
+    color: #243E63
 }
 
 h4 {
     font-size: 20px;
     color: #6415ff;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 350;
+    color: #243E63;
+    margin-bottom: 32px;
 }
 
 nav {
@@ -114,7 +120,6 @@ header {
 .email__input {
     position: relative;
     margin-bottom: 64px;
-    padding-left: 12px;
 }
 
 .email__input--field {
@@ -163,4 +168,45 @@ FEATURES
 
 .section__container {
     padding: 80px 0;
+}
+
+.section__tag--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section__tag,
+.section__para {
+    padding: 12px 24px;
+}
+
+.section__para {
+    color: #243E63;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.service {
+    display: flex;
+    width: calc(100%/3);
+    padding: 12px 24px;
+}
+
+.service__img--wrapper {
+    padding: 12px 24px;
+}
+.service__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.service__title {
+    font-size: 24px;
+    margin-bottom: 16px;
 }
