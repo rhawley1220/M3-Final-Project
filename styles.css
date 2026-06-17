@@ -12,10 +12,15 @@ h1 {
     margin-bottom: 32px;
 }
 
-h2 {
+p {
     font-size: 16px;
     font-weight: 350;
     margin-bottom: 32px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #6415ff;
 }
 
 nav {
@@ -40,10 +45,10 @@ li {
     content: "\A";
     white-space: pre;
 }
+
 .nav__container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,7 +98,6 @@ header {
    max-width: 1200px;
    margin: 0 auto;
    display: flex;
-   align-items: flex-start;
 }
 
 .header__container {
@@ -110,6 +114,7 @@ header {
 .email__input {
     position: relative;
     margin-bottom: 64px;
+    padding-left: 12px;
 }
 
 .email__input--field {
@@ -137,6 +142,7 @@ header {
 .customer__logo {
     max-width: 512px;
     object-fit: cover;
+    padding-left: 12px;
 }
 
 .header__img--mask {
@@ -147,4 +153,14 @@ header {
 
 .header__img {
     max-width: 512px;
+}
+
+/*
+
+FEATURES
+
+*/
+
+.section__container {
+    padding: 80px 0;
 }
