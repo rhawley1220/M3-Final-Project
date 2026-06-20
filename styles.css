@@ -283,6 +283,12 @@ VALUES
 
 */
 
+.value {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/2);
+
+}
 .values__description--wrapper {
     width: 50%;
     padding: 12px 24px;
@@ -291,4 +297,25 @@ VALUES
 .values__list {
     padding: 12px 24px;
     gap: 24px;
+}
+
+.values__btn {
+    margin: 12px 24px;
+}
+
+/*
+
+PRICING
+
+*/
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
