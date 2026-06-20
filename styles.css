@@ -259,7 +259,36 @@ STEPS
     padding: 12px 24px;
 }
 
+.steps {
+    padding: 12px 24px;
+}
 .step__number {
     font-size:24px;
+    font-weight: bold;
+    color: #cbd5e0;
     display: flex;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 12px;
+    margin-top: 3px;
+}
+
+/*
+
+VALUES
+
+*/
+
+.values__description--wrapper {
+    width: 50%;
+    padding: 12px 24px;
+}
+
+.values__list {
+    padding: 12px 24px;
+    gap: 24px;
 }
