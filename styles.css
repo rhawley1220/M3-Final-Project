@@ -187,6 +187,7 @@ FEATURES
 .section__tag--wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     text-align: center;
 }
@@ -308,14 +309,30 @@ VALUES
 PRICING
 
 */
+
 .plans {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .plan {
     width: calc(100%/3);
     display: flex;
     flex-direction: column;
-    text-align: center;
+}
+
+.plan__features {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan__feature {
+    color: rgb(113, 128, 150);
+}
+
+#pricing .row{
+    flex-direction: column;
+    align-items: center;
 }
