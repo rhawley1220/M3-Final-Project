@@ -243,7 +243,8 @@ QUALITY
 .quality__btn  {
     margin: 12px 24px;
 }
-.quality__img--mask {
+.quality__img--mask,
+.testimonial__img--mask {
     width: 50%;
     padding: 12px 24px;
 }
@@ -318,6 +319,7 @@ PRICING
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding: 12px 24px;
 }
 
 .plan {
@@ -384,4 +386,68 @@ PRICING
 
 .plan__purchase {
     border: none;
+}
+
+#business-plan .plan__purchase {
+    background: white;
+    color: #6415FF
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+.testimonial__img--mask {
+    align-content: center;
+}
+.testimonial__rating {
+    padding: 12px 24px;
+    color: rgb(246 173 85);
+}
+
+.user__experience {
+    padding: 12px 24px;
+}
+
+.user__experience--title {
+    margin-bottom: 24px;
+}
+
+.user__img--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 9px 16px rgba(0, 0, 0, 0.25);
+}
+
+.user__img {
+    width: 100%;
+}
+
+.user__credentials--wrapper {
+    display: flex;
+}
+
+.user__credentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px 24px;
+    padding: 12px 0;
+}
+
+.user__btn {
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 12px 12px;
+    background: #edf2f7;
+    border: none;
+}
+
+.user__btn--img {
+    color: #6415FF;
 }
