@@ -21,6 +21,7 @@ h2 {
 h3 {
     font-size: 24px;
 }
+
 h4 {
     font-size: 20px;
     color: #6415ff;
@@ -450,4 +451,35 @@ TESTIMONIALS
 
 .user__btn--img {
     color: #6415FF;
+}
+
+/*
+
+GET STARTED
+
+*/
+
+.start__container {
+    padding: 96px 48px;
+    background: #6415FF;
+    border-radius: 20px;
+}
+
+#start .row {
+    justify-content: space-between;
+    padding: 12px 24px;
+}
+
+#start h3 {
+    font-size: 36px;
+    color: white;
+}
+.start__btns {
+    display: flex;
+    align-items: center;
+}
+
+.break {
+    display: block;
+
 }
