@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
  }
+section {
+    padding: 32px;
+}
 
 h1 {
     font-size: 48px;
@@ -37,10 +40,6 @@ p {
     font-weight: 400;
     color: #7c8ba1;
     margin-bottom: 32px;
-}
-
-nav {
-    padding: 32px;
 }
 
 ul {
@@ -120,10 +119,6 @@ li {
     padding: 12px 24px;
 }
 
-header {
-    padding: 32px;
-}
-
 .row {
    width: 100%;
    max-width: 1200px;
@@ -134,6 +129,7 @@ header {
 .header__container {
     display: flex;
     justify-content: center;
+    margin-top: 96px;
 }
 
 .header__description,
@@ -157,7 +153,6 @@ header {
     border-radius: 16px;
     border-color: rgb(229, 231, 235);
     font-size: 16px;
-    text-align: center;
     padding: 16px 24px;
 }
 
@@ -345,6 +340,10 @@ PRICING
     margin: 16px 0;
 }
 
+.plan__target {
+    font-size: 20px;
+}
+
 .plan__middle {
     padding: 32px;
 }
@@ -376,6 +375,7 @@ PRICING
 #personal-plan {
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
+
 #business-plan {
     background:  linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     color: white;
@@ -389,6 +389,11 @@ PRICING
     border: none;
 }
 
+.plan__bottom {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
 #business-plan .plan__purchase {
     background: white;
     color: #6415FF
@@ -458,7 +463,6 @@ TESTIMONIALS
 GET STARTED
 
 */
-
 .start__container {
     padding: 96px 48px;
     background: #6415FF;
@@ -474,12 +478,34 @@ GET STARTED
     font-size: 36px;
     color: white;
 }
+
 .start__btns {
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
+.start__btn,
+.contact__btn {
+    padding: 20px 32px;
+}
+
+.start__btn {
+    background: #f56565;
+    border: none;
+}
+
+.contact__btn {
+    border-color: white;
+    border-width: 1px;
+}
 .break {
     display: block;
+}
+
+.pattern-background {
+position: relative;
+overflow: hidden;
+background-color: #b3cc57;
 
 }
