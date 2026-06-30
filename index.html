@@ -25,6 +25,34 @@
                     <li><a href="#" class="nav__link--primary">Sign Up</a>
                     </li>
                 </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onClick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onClick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onClick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onClick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onClick="closeMenu()">Contact</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onClick="closeMenu()">Log In</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link nav__link--primary" onClick="closeMenu()">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <header>
