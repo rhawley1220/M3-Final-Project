@@ -716,8 +716,8 @@ footer {
 /* SMALL PHONES, TABLETS,LARGE SMARTPHONES */
 
 @media (max-width: 768px) {
-  .nav__links,
-  .login {
+    .nav__links,
+    .login {
     display: none;
   }
 
@@ -745,14 +745,6 @@ footer {
   .img {
     width: 100%;
   }
-}
-
-/* SMALL PHONES, LARGE SMARTPHONES */
-
-@media (max-width: 550px) {
-    .btn__menu {
-        display: block;
-    }
 
     .plans {
         display: flex;
@@ -765,5 +757,25 @@ footer {
 
     .start__btns {
         margin-top: 12px;
+    }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+
+@media (max-width: 550px) {
+    h5 {
+        font-size: 16px;
+    }
+    
+    .btn__menu {
+        display: block;
+    }
+
+    .footer__columns {
+        padding: 16px;
+    }
+
+    .footer__column--link {
+        font-size: 12px;
     }
 }
