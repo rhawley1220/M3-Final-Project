@@ -140,6 +140,47 @@ li {
     padding: 12px 24px;
 }
 
+.btn__menu {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #6415ff;
+  display: none;
+}
+
+.menu__backdrop {
+  position: fixed;
+  top: 0;
+  left: 16px;
+  right: 16px;
+  padding: 32px;
+  background-color: white;
+  border-radius: 16px;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 300ms ease;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn__menu--close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
 .row {
    width: 100%;
    max-width: 1200px;
@@ -322,8 +363,9 @@ VALUES
     display: flex;
     flex-direction: column;
     width: calc(100%/2);
-
+    margin: 12px 24px;
 }
+
 .values__description--wrapper {
     width: 50%;
     padding: 12px 24px;
@@ -671,44 +713,57 @@ footer {
     z-index: 2;
 }
 
-/* SMALL PHONES, TABLETS, LARGE SMART PHONES */
+/* SMALL PHONES, TABLETS,LARGE SMARTPHONES */
 
 @media (max-width: 768px) {
-    .header__description {
-        padding: 0 24px;
-    }
-    
-    h1 {
-        font-size: 40px;
-    }
+  .nav__links,
+  .login {
+    display: none;
+  }
 
-    h2 {
-        font-size: 26px;
-    }
+  .btn__menu {
+    display: block;
+  }
 
-    button {
-        font-size: 18px;
-    }
+  .row {
+    flex-direction: column;
+  }
+
+  .header__description--wrapper,
+  .header__img--mask,
+  .quality__description--wrapper,
+  .quality__img--mask,
+  .steps__img--mask,
+  .steps__description--wrapper {
+    width: 100%;
+  }
+
+  .service {
+    width: 100%
+  }
+
+  .img {
+    width: 100%;
+  }
 }
 
 /* SMALL PHONES, LARGE SMARTPHONES */
 
 @media (max-width: 550px) {
-    .nav__links,
-    .login {
-        display: none;
-    }
-    
     .btn__menu {
         display: block;
     }
 
-    .highlight {
-        width: 100%;
-        margin-bottom: 24px;
+    .plans {
+        display: flex;
+        flex-direction: column;
     }
 
-    .highlight:not(:last-child) {
-        margin-bottom: 24px;
+    .plan {
+        width: 100%;
+    }
+
+    .start__btns {
+        margin-top: 12px;
     }
 }
